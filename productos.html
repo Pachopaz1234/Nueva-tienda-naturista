@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Vida Natural</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🌿 Vida Natural</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="products-header">
+        <div class="container">
+            <h1>Nuestros Productos Naturales</h1>
+            <p>Descubre nuestra selección de 50 productos naturales cuidadosamente elegidos</p>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProducts('todos')">Todos</button>
+                <button class="filter-btn" onclick="filterProducts('hierbas')">Hierbas</button>
+                <button class="filter-btn" onclick="filterProducts('suplementos')">Suplementos</button>
+                <button class="filter-btn" onclick="filterProducts('aceites')">Aceites</button>
+                <button class="filter-btn" onclick="filterProducts('tes')">Tés</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-grid-section">
+        <div class="container">
+            <div class="products-grid" id="productsContainer">
+                <!-- Los productos se cargarán aquí mediante JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌿 Vida Natural</h3>
+                    <p>Tu tienda de confianza para productos naturales y saludables.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📍 Calle Principal #123</p>
+                    <p>📞 (123) 456-7890</p>
+                    <p>✉️ info@vidanatural.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horario</h4>
+                    <p>Lunes a Viernes: 9am - 7pm</p>
+                    <p>Sábados: 10am - 4pm</p>
+                    <p>Domingos: Cerrado</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vida Natural - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="productos.js"></script>
+</body>
+</html>
